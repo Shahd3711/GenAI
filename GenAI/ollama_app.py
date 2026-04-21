@@ -1,17 +1,3 @@
-"""
-AI Chef Assistant — Ollama Backend (Part b)
-Uses the exact same Chef system prompt and step-by-step logic,
-but routes completions through a local Ollama instance.
-
-Run Ollama first:
-  ollama serve
-  ollama pull llama3          # or mistral, gemma, etc.
-
-Then run this server:
-  python ollama_app.py
-
-Frontend served at http://localhost:5001
-"""
 
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
